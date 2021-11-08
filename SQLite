@@ -1,0 +1,28 @@
+Step 1- SQLite installation on Ubuntu
+$ sudo apt update
+$ sudo apt install sqlite3
+$ sqlite3 --version // installation verification
+Step 2 - db creation
+$ sqlite3 monkeys.db
+Step 3 - table creation
+> CREATE TABLE monkeys(id integer NOT NULL, type text NOT NULL, name text NOT NULL, weight integer NOT NULL, height integer NOT NULL);
+> INSERT INTO monkeys VALUES (1, "Shimpanzee", "Sammy", 55, 130);
+> INSERT INTO monkeys VALUES (2, "Gorilla", "Bob", 150, 170);
+> INSERT INTO monkeys VALUES (3, "Lemur", "Pam", 4, 45);
+> INSERT INTO monkeys VALUES (4, "Macaque", "Lucy", 11, 80);
+> INSERT INTO monkeys VALUES (5, "Shimpanzee", "Scarlet", 45, 123);
+Step 4 - table reading
+> SELECT * FROM monkeys;
+> SELECT * FROM sharks WHERE id IS 1;
+Step 5 - table update
+> ALTER TABLE monkeys ADD COLUMN age integer;
+> UPDATE monkeys SET age = 5 WHERE id=1;
+> UPDATE monkeys SET age = 7 WHERE id=2;
+> UPDATE monkeys SET age = 4 WHERE id=3;
+> UPDATE monkeys SET age = 8 WHERE id=4;
+> UPDATE monkeys SET age = 11 WHERE id=5;
+Check
+Step 6 - Info deletion 
+DELETE FROM monkeys WHERE age <= 5;
+Check
+Step 7 - Table joint
