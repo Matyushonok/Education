@@ -26,3 +26,7 @@ Step 6 - Info deletion
 DELETE FROM monkeys WHERE age <= 5;
 Check
 Step 7 - Table joint
+Create another Table "Scientists" with the following columns: Id, Name, Degree, University. Fill it in (3 lines is enough). Check if it is readible. 
+> SELECT * FROM monkeys INNER JOIN scientists on monkeys.id = scientists.id;
+check
+
