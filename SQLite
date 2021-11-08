@@ -30,4 +30,4 @@ Create another Table "Scientists" with the following columns: Id, Name, Degree, 
 > SELECT * FROM monkeys INNER JOIN scientists on monkeys.id = scientists.id;
 check
 
-end.
+end
